@@ -39,10 +39,10 @@ const setTimeoutPromise = async (
     }
   });
 
-function TrafficLight({ lights: lightsProps }: TrafficLightProps) {
+function TrafficLight({ lights: lightsProp }: TrafficLightProps) {
   const [lighting, setLighting] = useState<number>();
 
-  const lights = lightsProps ?? [
+  const lights = lightsProp ?? [
     {
       color: "red",
       duration: 20000,
